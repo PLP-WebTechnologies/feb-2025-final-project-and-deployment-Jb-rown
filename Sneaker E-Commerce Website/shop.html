@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store - Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">SneakerHub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-controls">
+            <input type="text" id="search-bar" placeholder="Search sneakers...">
+            <div class="filters">
+                <select id="filter-brand">
+                    <option value="">All Brands</option>
+                    <option value="Nike">Nike</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Puma">Puma</option>
+                </select>
+                <select id="filter-size">
+                    <option value="">All Sizes</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <select id="filter-color">
+                    <option value="">All Colors</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="product-grid" id="shop-products"></section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SneakerHub. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

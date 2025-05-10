@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store - Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">SneakerHub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-slider">
+                <img id="main-image" src="" alt="Sneaker">
+                <div class="slider-thumbs">
+                    <img src="" alt="Thumb 1" class="thumb active">
+                    <img src="" alt="Thumb 2" class="thumb">
+                    <img src="" alt="Thumb 3" class="thumb">
+                </div>
+            </div>
+            <div class="product-info">
+                <h2 id="product-name"></h2>
+                <p id="product-brand"></p>
+                <p id="product-price"></p>
+                <p id="product-description"></p>
+                <select id="product-size">
+                    <option value="8">Size 8</option>
+                    <option value="9">Size 9</option>
+                    <option value="10">Size 10</option>
+                </select>
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="addToWishlist()">Add to Wishlist</button>
+                <div class="rating">★★★★☆ (4.5/5)</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SneakerHub. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

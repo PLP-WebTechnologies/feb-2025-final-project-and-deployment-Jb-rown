@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo"> ZeroCoolSneakerHub</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Step Into Style</h1>
+            <p>Discover the latest sneaker trends!</p>
+            <a href="shop.html" class="cta-button">Shop Now</a>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Sneakers</h2>
+            <div class="product-grid" id="featured-products"></div>
+        </section>
+
+        <section class="promo-banner">
+            <h2>Buy 3+ Pairs, Get 10% Off!</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SneakerHub. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

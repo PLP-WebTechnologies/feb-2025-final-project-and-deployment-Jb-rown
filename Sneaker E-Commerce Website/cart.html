@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">SneakerHub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Subtotal: $<span id="cart-subtotal">0.00</span></p>
+                <p>Discount: $<span id="cart-discount">0.00</span></p>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <a href="checkout.html" class="cta-button">Proceed to Checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SneakerHub. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store - Receipt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">SneakerHub</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="receipt">
+            <h2>Order Receipt</h2>
+            <p>Transaction ID: <span id="transaction-id"></span></p>
+            <p>Date: <span id="order-date"></span></p>
+            <div id="receipt-items"></div>
+            <div class="receipt-summary">
+                <p>Subtotal: $<span id="receipt-subtotal">0.00</span></p>
+                <p>Discount: $<span id="receipt-discount">0.00</span></p>
+                <p>Total: $<span id="receipt-total">0.00</span></p>
+            </div>
+            <button onclick="printReceipt()">Print Receipt</button>
+            <button onclick="downloadReceipt()">Download Receipt</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SneakerHub. All rights reserved.</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
