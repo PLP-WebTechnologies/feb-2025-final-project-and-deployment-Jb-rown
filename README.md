@@ -2,7 +2,8 @@
 
 ## Overview
 SneakerHub is a modern, responsive e-commerce website built for sneaker enthusiasts. It offers a seamless shopping experience with features like product browsing, cart management, and a contact form. The site showcases a curated collection of sneakers, enhanced with visually appealing background images, Font Awesome social media icons, and a dark-themed Mombasa map for the store’s location. Built using pure HTML5, CSS3, and Vanilla JavaScript, SneakerHub prioritizes performance and simplicity.
-
+## Live Demo
+- [ZeroCoolSneakerHub](splendorous-parfait-1d24aa.netlify.app)
 ## Features
 - **Responsive Design**: Adapts to all screen sizes, from mobile to desktop.
 - **Product Catalog**: Displays sneakers with images, prices, and details, sourced from a JavaScript array.
